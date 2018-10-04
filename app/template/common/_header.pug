@@ -1,0 +1,25 @@
+header.header.hero__header
+    .container.header__inner
+        a(href="").logo
+            img(src=pathImage + "logo.svg", alt="")
+            span Scan&nbsp;
+            span.logo__color bot
+        a(href="tel:").header__mail
+            span.header__mail-icon
+                +icon("mail")
+            span.header__mail-text Написать письмо
+
+        include ../common/_social
+
+        a(href="tel:+74956005432").header__phone
+            span.header__phone-icon
+                +icon("phone")
+            span.header__phone-text +7 495 600-54-32
+
+        a(href="").header__chat
+            span.header__chat-text Онлайн-чат
+            .header__icon
+                span.header__icon-tg
+                    +icon("telegram")
+                span.header__icon-lock
+                    +icon("lock")

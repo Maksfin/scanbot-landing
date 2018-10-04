@@ -1,0 +1,53 @@
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: $xs) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: $xs) and (max-width: $sm-max) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: $sm) and (max-width: $dsk) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: $md) {
+    .hidden-lg {
+        display: none !important;
+    }
+}

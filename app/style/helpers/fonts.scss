@@ -1,0 +1,3 @@
+// Main fonts
+@include font-face('Bebas Neue', '#{$path-fonts}BebasNeueRegular');
+@include font-face('Bebas Neue', '#{$path-fonts}BebasNeueBold', normal, bold);

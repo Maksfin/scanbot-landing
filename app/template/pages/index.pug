@@ -1,0 +1,45 @@
+extends ../_template
+
+block variables
+  - var title = 'Scanbot'
+
+block content
+  section.hero
+    include ../common/_header
+
+    .container
+      .hero__promo.promo
+        .promo__left
+          h1.promo__title Уникальный робот для автоматической торговли
+          .h3.promo__subtitle на брокерском счете нашего партнера
+          a(href="" target="_blank").promo__link Открыть счет
+            +icon("new_window")
+
+        .promo__right
+          p.promo__text.elem-border Хотите зарабатывать на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!
+          .promo__price
+            .promo__price-old
+            .promo__price-actual
+          button.btn.btn-main.promo__btn.js-open-form Заказать Scanbot
+
+      ul.hero__privilege.privilege
+        li.privilege__item
+          +icon("serv_1")
+          p.text-small Прибыльность 30—60% в месяц от депозита
+        li.privilege__item
+          +icon("serv_2")
+          p.text-small Не имеет просадок на длинной дистанции
+        li.privilege__item
+          +icon("serv_3")
+          p.text-small Эквити равен балансу в течении всей торговли
+        li.privilege__item
+          +icon("serv_4")
+          p.text-small Прошел испытание на реальном рынке
+        li.privilege__item
+          +icon("serv_5")
+          p.text-small Аналитика и мониторинг через ClasterDelta
+        li.privilege__item
+          +icon("serv_6")
+          p.text-small Не использует объемы и математику
+    
+  main.maincontent

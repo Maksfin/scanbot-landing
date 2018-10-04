@@ -1,0 +1,40 @@
+// Colors
+$black:       #1F2F3E;
+$dark:        #6C7587;
+$medium:      #929BAF;
+$lightn:      #B3BCC3;
+
+$bg:          #EFF0F2;
+
+$green:       #1F2F3E;
+$green_hover: #EFF0F2;
+
+$shadow:      #061928;
+
+$white:       #ffffff;
+
+
+
+
+// Fonts
+$base-font-size: 16px;
+$font-main: Bebas Neue, -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+$font-roboto: Roboto;
+
+
+//Path
+$path-fonts: '../fonts/';
+
+
+// Media queries breakpoints max-width
+$xs-max: 479px;
+$sm-max: 767px;
+$md-max: 991px;
+$dsk-max: 1199px;
+
+// Media queries breakpoints min-width
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$dsk: 1200px;
+$xl: 1441px;

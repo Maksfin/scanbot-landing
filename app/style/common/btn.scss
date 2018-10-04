@@ -1,0 +1,16 @@
+// Base class
+.btn {
+    border: none;
+    background: none;
+    padding: 0;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    &:disabled,
+    &[disabled="disabled"] {
+        cursor: not-allowed;
+        &:hover {
+            background-color: #edeedd;
+        }
+    }
+}
