@@ -24,7 +24,7 @@
     &__item {
         text-align: center;
         
-        @media (min-width: $sm) {
+        @media (min-width: $md) {
             width: 33%;
         }
 

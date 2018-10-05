@@ -34,17 +34,17 @@ block content
               form.form.promo__form-wrap
                 .form__group
                   label(for="name").form__label Ваше имя
-                  input.form__input(id="name" type="text" required)
+                  input.form__input(id="name" type="text" )
                 .form__group
                   label(for="phone").form__label Телефон для связи
-                  input.form__input(id="phone" type="tel" required)
+                  input.form__input(id="phone" type="tel" placeholder="+7 (     )")
                 .form__group
                   label(for="email").form__label Адрес эл. почты
-                  input.form__input(id="email" type="email" required)
+                  input.form__input(id="email" type="email" )
                 .form__text.text-micro Нажимая на кнопку, я принимаю условия 
-                  button.btn.btn-text(type="button") пользовательского соглашения
+                  button.btn.btn-text(type="button" data-modal="#contract") пользовательского соглашения
                 .form__group
-                  button.btn.btn-main(type="submit") Отправить заявку
+                  button.btn.btn-main.js-form-submit(type="submit" disabled) Отправить заявку
 
             .promo__succes
               .promo__succes-wrap
@@ -109,7 +109,7 @@ block content
               | от суммы вашего депозита
             .video__cols-wrap.video__cols-item
               h3.video__subtitle.h4 Ваш эквити к концу торгового дня будет равен депозиту — робот видит реальный объём денежных масс на рынке
-              button.btn.btn-main.js-show-form-popup Заказать Scanbot
+              button.btn.btn-main(data-modal="#form-order") Заказать Scanbot
 
     section.info.container
       ul.info__list
@@ -124,3 +124,4 @@ block content
         li.info__item
           .info__num.elem-border.elem-border--center.h2 +30%
           .info__text.text-small Динамика по новым клиентам
+

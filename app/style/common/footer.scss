@@ -39,7 +39,8 @@
         color: $medium;
 
         &-item {
-            display: block;
+            display: flex;
+            align-items: center;
 
             @media (min-width: $sm) and (max-width: $md-max) {
                 width: 50%;
@@ -91,8 +92,6 @@
     }
 
     &__logo {
-        display: flex;
-        align-items: center;
 
         .text-micro {
             margin-right: 8px;

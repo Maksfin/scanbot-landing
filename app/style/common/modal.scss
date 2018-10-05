@@ -1,0 +1,128 @@
+.modal {
+    background-color: #EFF0F2;
+    max-width: 385px;
+    padding: 48px;
+
+    @media (max-width: $sm-max) {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 100px 15px;
+
+        .btn-main {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            bottom: 20px;
+        }
+    }
+
+    a.close-modal {
+        background: none;
+        width: 48px;
+        height: 48px;
+        text-indent: 0;
+        font-size: 0;
+        background-color: $white;
+        border-radius: 50%;
+        top: -50px;
+        right: -40px;
+
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $black;
+            top: 48%;
+            left: 15px;
+            border-radius: 2px;
+        }
+
+        &:before {
+            transform: rotate(-45deg);
+        }
+
+        &:after {
+            transform: rotate(45deg);
+        }
+
+        @media (max-width: $sm-max) {
+            background-color: transparent;
+            top: 5px;
+            right: 5px;
+        }
+
+        &:hover {
+            background-color: $green;
+            &:before,
+            &:after {
+                background-color: $white;
+            }
+        }
+        &:active {
+            &:before, &:after {
+                opacity: 0.5;
+            }
+        }
+    }
+
+}
+
+.blocker {
+    @media (max-width: $sm-max) {
+        padding: 0;
+    }
+}
+
+.modal--text {
+    height: auto;
+    padding-top: 50px;
+
+    @media (min-width: $sm) {
+        margin-top: 35px;
+        max-width: 960px;
+        width: 90%;
+    }
+
+    .text-base {
+        margin-bottom: 20px;
+    }
+
+    ol {
+        margin-bottom: 40px;
+        list-style: none;
+        counter-reset: li;
+        padding-left: 0;
+        margin-top: 20px;
+    
+        li:before {
+            counter-increment: li;
+            content: counters(li, ".") ". ";
+            margin-right: 12px;
+        }
+    }
+
+    ol > li,
+    ul > li {
+       @extend .text-base; 
+    }
+    
+    ol > li > ol >li:before {
+        color: $medium;
+    }
+    ol > li > ol >li > ul {
+        list-style: none;
+        margin-top: 20px;
+    }
+    ol > li > ol >li > ul >li:before {
+        content: '\2014';
+    }
+
+    h3 {
+        margin-top: 30px;
+    }
+}

@@ -2,7 +2,6 @@
 
     &__group {
         margin-bottom: 15px;
-
     }
 
     &__input {
@@ -10,12 +9,13 @@
         border-radius: 10px;
         padding: 15px;
         font-size: 17px;
-        border: 1px solid $medium;
+        border: none;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.4);
         font-family: $font-roboto;
         outline: none;
 
         &:focus {
-            border-color: $green;
+            box-shadow: inset 0px 0px 2px 1px rgba($green, 1);
         }
     }
 
@@ -32,6 +32,18 @@
         margin-bottom: 30px;
         @media (min-width: $sm) and (max-width: $md-max) {
             order: 5;
+        }
+    }
+
+    &--modal {
+       .form__text {
+           color: $black;
+        }
+       .form__label {
+           color: $medium;
+        }
+        .form__group:last-child {
+            margin-bottom: 0;
         }
     }
 

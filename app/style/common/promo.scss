@@ -13,7 +13,20 @@
     &__left {
         @media (max-width: $md-max) {
             padding: 40px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -15px;
+                width: calc(100% + 30px);
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.1);
+                @media (min-width: $sm) {
+                   left: -48px;
+                   width: calc(100% + 96px);
+                }
+            }
         }
 
         @media (max-width: $sm-max) {
@@ -39,6 +52,9 @@
         &-inner {
             @media (min-width: $md) {
                 width: 290px;
+            }
+            @media (min-width: $sm) and (max-width: $md-max) {
+                min-height: 200px;
             }
         }
     }
@@ -188,12 +204,9 @@
     }
 
     &__main {
-        display: none !important;
-
         @media (min-width: $sm) and (max-width: $md-max) {
             display: flex;
             justify-content: space-between;
-            min-height: 200px;
         }
 
         &-item {
@@ -203,36 +216,38 @@
         }
     }
 
-    &__form-wrap {
-        @media (min-width: $sm) and (max-width: $md-max) {
-            display: flex;
-            justify-content: space-between;
-            min-height: 200px;
-            flex-wrap: wrap;
-            align-items: flex-end;
-        }
+    &__form {
+        display: none;
 
-        .form__group {
+        &-wrap {
             @media (min-width: $sm) and (max-width: $md-max) {
-                width: 48%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: flex-end;
+            }
 
-                &:last-child {
-                    text-align: right;
+            .form__group {
+                @media (min-width: $sm) and (max-width: $md-max) {
+                    width: 48%;
+
+                    &:last-child {
+                        text-align: right;
+                    }
                 }
             }
         }
-
-        display: none !important;
     }
 
     &__succes {
+        display: none;
+
         &-wrap {
             color: $white;
 
             @media (min-width: $sm) and (max-width: $md-max) {
                 display: flex;
                 justify-content: space-between;
-                min-height: 200px;
                 flex-wrap: wrap;
 
                 .promo__succes-btn {
@@ -242,7 +257,6 @@
 
                 .promo__succes-title {
                     width: 340px;
-                    margin-bottom: 0;
                 }
 
                 >.text-base {

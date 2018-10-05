@@ -111,6 +111,7 @@
 
     &:disabled,
     &[disabled="disabled"] {
+        background-color: $green;
         cursor: not-allowed;
         color: rgba($white, 0.5);
     }
@@ -118,6 +119,31 @@
     @media (max-width: $sm-max) {
         width: 100%;
     }
+
+    &--white {
+        border: 1px solid $green;
+        color: $green;
+        background-color: $white;
+
+        &:hover {
+            background-color: $green;
+            color: $white;
+        }
+
+        &:active {
+            color: rgba($white, 0.5);
+        }
+
+        &:disabled,
+        &[disabled="disabled"],
+        .disabled {
+            border-color: $light;
+            color: $light;
+            background-color: transparent;
+        }
+
+    }
+
 }
 
 .btn-text {
