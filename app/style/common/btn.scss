@@ -8,6 +8,7 @@
     cursor: pointer;
     font-family: inherit;
     transition: .3s;
+    outline: none;
 }
 
 .btn-circle {
@@ -42,18 +43,19 @@
 .btn-chat {
     display: flex;
     align-items: center;
+    color: $green;
 
     &__tg {
         display: flex;
         width: 40px;
         height: 40px;
-        background-color: $green;
+        background-color: currentColor;
         border-radius: 50%;
-        color: $white;
 
         >.icon {
             margin: auto;
             font-size: 18px;
+            color: $white;
         }
     }
 
@@ -63,13 +65,24 @@
         height: 24px;
         border-radius: 50%;
         background-color: $white;
-        color: $green;
+        color: inherit;
         margin-right: -12px;
         z-index: 1;
 
         >.icon {
             margin: auto;
             font-size: 10px;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: $green_hover;
+    }
+
+    &:active {
+        .icon {
+            opacity: 0.5;
         }
     }
 }
@@ -79,6 +92,7 @@
     align-items: center;
     justify-content: center;
     height: 48px;
+    min-width: 190px;
     font-size: 22px;
     font-weight: bold;
     padding: 13px 30px 10px;
@@ -86,7 +100,6 @@
     background-color: $green;
     color: $white;
     letter-spacing: 0.02em;
-    outline: none;
 
     &:hover {
         background-color: $green_hover;
@@ -104,5 +117,14 @@
 
     @media (max-width: $sm-max) {
         width: 100%;
+    }
+}
+
+.btn-text {
+    color: $green;
+
+    &:hover,
+    &:focus {
+        color: $green_hover;
     }
 }

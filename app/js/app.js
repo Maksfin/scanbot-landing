@@ -1,7 +1,22 @@
-(function() {
-  'use strict';
+$(function () {
 
-  setTimeout(function() {
-    document.querySelector('.greating_picture').classList.add('m--show');
-  }, 1000);
-})();
+  // Listener Window scroll
+  $(window).scroll(function () {
+    headerFix();
+  });
+
+  // Fixed header
+  function headerFix() {
+    var scroll = $(window).scrollTop();
+    var header = $('.header');
+
+
+    if (scroll > header.height() - 5) {
+      header.addClass('js-fixed');
+    } else {
+      header.removeClass('js-fixed');
+    }
+  }
+
+
+});

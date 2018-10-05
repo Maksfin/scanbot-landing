@@ -37,21 +37,8 @@
         }
 
         &-inner {
-            @media (min-width: $sm) {
+            @media (min-width: $md) {
                 width: 290px;
-            }
-
-            @media (min-width: $sm) and (max-width: $md-max) {
-                display: flex;
-                justify-content: space-between;
-                min-height: 200px;
-                width: 100%;
-            }
-        }
-
-        &-item {
-            @media (min-width: $sm) and (max-width: $md-max) {
-                width: 33%;
             }
         }
     }
@@ -180,7 +167,7 @@
 
         &-actual {
             color: $white;
-            display: inline-flex;
+            display: flex;
             line-height: 66px;
 
             &-icon {
@@ -197,6 +184,75 @@
                     margin: auto;
                 }
             }
+        }
+    }
+
+    &__main {
+        display: none !important;
+
+        @media (min-width: $sm) and (max-width: $md-max) {
+            display: flex;
+            justify-content: space-between;
+            min-height: 200px;
+        }
+
+        &-item {
+            @media (min-width: $sm) and (max-width: $md-max) {
+                width: 33%;
+            }
+        }
+    }
+
+    &__form-wrap {
+        @media (min-width: $sm) and (max-width: $md-max) {
+            display: flex;
+            justify-content: space-between;
+            min-height: 200px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .form__group {
+            @media (min-width: $sm) and (max-width: $md-max) {
+                width: 48%;
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+
+        display: none !important;
+    }
+
+    &__succes {
+        &-wrap {
+            color: $white;
+
+            @media (min-width: $sm) and (max-width: $md-max) {
+                display: flex;
+                justify-content: space-between;
+                min-height: 200px;
+                flex-wrap: wrap;
+
+                .promo__succes-btn {
+                    width: 100%;
+                    margin-top: 0;
+                }
+
+                .promo__succes-title {
+                    width: 340px;
+                    margin-bottom: 0;
+                }
+
+                >.text-base {
+                    width: 250px;
+                }
+            }
+        }
+
+        &-btn {
+            margin-top: 50px;
         }
     }
 }

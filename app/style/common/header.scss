@@ -1,4 +1,23 @@
 .header {
+    transition: .2s;
+
+    &.js-fixed {
+        position: fixed;
+        background-color: $white;
+        box-shadow: 0px 4px 8px rgba(6, 25, 40, 0.05);
+        z-index: 1;
+
+        .header__phone-text,
+        .logo__color {
+            color: $black;
+        }
+
+        .social__link,
+        .btn-chat__lock {
+            background-color: $bg;
+        }
+    }
+
     &__inner {
         min-height: 64px;
         display: flex;
@@ -47,6 +66,18 @@
         &-text {
             color: $green;
             margin-right: 12px;
+        }
+    }
+
+    .social {
+        @media (max-width: $xs-max) {
+            display: none;
+        }
+
+        @media (min-width: $xs) {
+            &__item:not(:first-child) {
+                margin-left: 5px;
+            }
         }
     }
 }

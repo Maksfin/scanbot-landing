@@ -11,4 +11,13 @@
         width: 40px;
         background-color: $green;
     }
+
+    &--center {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        &:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }

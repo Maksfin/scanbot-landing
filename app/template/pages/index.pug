@@ -10,7 +10,7 @@ block content
     .container
       .hero__promo.promo
         .promo__left
-          h1.promo__title 
+          h1.promo__title
             span.promo__title-text Уникальный робот для автоматической торговли
           .h3.promo__subtitle на брокерском счете нашего партнера
           a(href="" target="_blank").promo__link Открыть счет
@@ -18,17 +18,41 @@ block content
 
         .promo__right
           .promo__right-inner
-            p.promo__text.promo__right-item.text-base.elem-border Хотите зарабатывать<br> на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!
 
-            .promo__price.promo__right-item
-              .promo__price-old.h3 50 000
-                span.promo__price-old-icon
-                  +icon("rub")
-              .promo__price-actual.h2 25 000
-                span.promo__price-actual-icon
-                  +icon("rub")
+            .promo__main
+              p.promo__text.promo__main-item.text-base.elem-border Хотите зарабатывать<br> на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!
+              .promo__price.promo__main-item
+                .promo__price-old.h3 50 000
+                  span.promo__price-old-icon
+                    +icon("rub")
+                .promo__price-actual.h1 25 000
+                  span.promo__price-actual-icon
+                    +icon("rub")
+              button.btn.btn-main.promo__btn.js-open-form Заказать Scanbot
+              
+            .promo__form
+              form.form.promo__form-wrap
+                .form__group
+                  label(for="name").form__label Ваше имя
+                  input.form__input(id="name" type="text" required)
+                .form__group
+                  label(for="phone").form__label Телефон для связи
+                  input.form__input(id="phone" type="tel" required)
+                .form__group
+                  label(for="email").form__label Адрес эл. почты
+                  input.form__input(id="email" type="email" required)
+                .form__text.text-micro Нажимая на кнопку, я принимаю условия 
+                  button.btn.btn-text(type="button") пользовательского соглашения
+                .form__group
+                  button.btn.btn-main(type="submit") Отправить заявку
 
-            button.btn.btn-main.promo__btn.js-open-form Заказать Scanbot
+            .promo__succes
+              .promo__succes-wrap
+                h3.promo__succes-title Заявка на установку принята!
+                p.text-base Наш специалист свяжется с вами и настроит робота после оплаты счета
+                .promo__succes-btn
+                  a(href="").btn.btn-main Оплатить
+
 
     .hero__privilege
       .container
@@ -86,4 +110,17 @@ block content
             .video__cols-wrap.video__cols-item
               h3.video__subtitle.h4 Ваш эквити к концу торгового дня будет равен депозиту — робот видит реальный объём денежных масс на рынке
               button.btn.btn-main.js-show-form-popup Заказать Scanbot
-                    
+
+    section.info.container
+      ul.info__list
+        li.info__item
+          .info__num.elem-border.elem-border--center.h2 >2 000
+          .info__text.text-small Количество установок
+
+        li.info__item
+          .info__num.elem-border.elem-border--center.h2 110,4 млн руб.
+          .info__text.text-small Суммарная прибыль в месяц
+
+        li.info__item
+          .info__num.elem-border.elem-border--center.h2 +30%
+          .info__text.text-small Динамика по новым клиентам

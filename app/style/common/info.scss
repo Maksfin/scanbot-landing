@@ -1,0 +1,46 @@
+.info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (min-width: $sm) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: $dsk) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    &__list {
+        @extend .list-reset;
+
+        @media (min-width: $sm) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        text-align: center;
+        
+        @media (min-width: $sm) {
+            width: 33%;
+        }
+
+        @media (max-width: $sm-max) {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    &__num {
+        color: $green;
+        font-weight: bold;
+    }
+
+    &__text {
+        color: $dark;
+    }
+}

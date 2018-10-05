@@ -1,0 +1,113 @@
+.footer {
+
+
+    &__top,
+    &__bottom {
+        border-top: 1px solid $white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (min-width: $sm) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &-inner {
+            @media (min-width: $sm) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__top {
+        color: $dark;
+
+        &-text {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        &-col {
+            @media (max-width: $sm-max) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__bottom {
+        color: $medium;
+
+        &-item {
+            display: block;
+
+            @media (min-width: $sm) and (max-width: $md-max) {
+                width: 50%;
+            }
+
+            @media (max-width: $md-max) {
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+
+            @media (min-width: $sm) {
+                &:nth-last-child(2) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-inner {
+            @media (min-width: $sm) and (max-width: $md-max) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &__list {
+        @extend .list-reset;
+
+        @media (min-width: $sm) {
+            max-width: 67%;
+        }
+
+        @media(min-width: $dsk) {
+            max-width: 74%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 25px;
+
+            @media(min-width: $dsk) {
+                width: 36%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        .text-micro {
+            margin-right: 8px;
+        }
+    }
+
+    &__link {
+        color: $green;
+
+        &+& {
+            margin-left: 30px;
+        }
+
+        &:hover {
+            color: $green_hover;
+        }
+    }
+}

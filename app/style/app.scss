@@ -65,6 +65,7 @@ h1,
 .h1 {
     font-size: 44px;
     letter-spacing: 0.02em;
+    margin-top: 0;
 
     @media (min-width: $sm) {
         font-size: 66px;
@@ -75,6 +76,7 @@ h2,
 .h2 {
     font-size: 36px;
     letter-spacing: 0.02em;
+    margin-top: 0;
 
     @media (min-width: $sm) {
         font-size: 44px;
@@ -85,6 +87,7 @@ h3,
 .h3 {
     font-size: 30px;
     letter-spacing: 0.02em;
+    margin-top: 0;
 
     @media (min-width: $sm) {
         font-size: 34px;
@@ -107,19 +110,19 @@ h4,
 
 input {
     &::-webkit-input-placeholder {
-        color: #a0a0a0;
+        color: $light;
     }
 
     &::-moz-placeholder {
-        color: #a0a0a0;
+        color: $light;
     }
 
     &:-ms-input-placeholder {
-        color: #a0a0a0;
+        color: $light;
     }
 
     &:-moz-placeholder {
-        color: #a0a0a0;
+        color: $light;
     }
 }
 
