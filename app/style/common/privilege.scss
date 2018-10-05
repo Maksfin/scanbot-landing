@@ -1,0 +1,40 @@
+.privilege {
+    @extend .list-reset;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    @media (min-width: $sm) {
+        padding-top: 45px;
+    }
+
+    @media (max-width: $md) {
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: $white;
+        padding: 0 2%;
+        width: 46%;
+        margin-bottom: 30px;
+        
+        @media (min-width: $sm) {
+            width: 31%;
+            margin-bottom: 45px;
+        }
+
+        >.icon {
+            color: $green;
+            font-size: 40px;
+        }
+
+        >.text-small {
+            margin: 15px 0 0;
+        }
+    }
+}

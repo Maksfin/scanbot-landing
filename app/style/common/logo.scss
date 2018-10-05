@@ -1,0 +1,18 @@
+.logo {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: $green;
+
+    @media (min-width: $sm) {
+        font-size: 34px;
+        letter-spacing: 0.02em;
+    }
+
+    &__text {
+        margin-left: 0.4em;
+    }
+    &__color {
+        color: $white;
+    }
+}

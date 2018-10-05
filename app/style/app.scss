@@ -41,6 +41,7 @@ body * {
 img {
     height: auto;
     max-width: 100%;
+    vertical-align: middle;
 }
 
 video {
@@ -60,7 +61,8 @@ h3 {
     font-weight: bold;
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: 44px;
     letter-spacing: 0.02em;
 
@@ -69,16 +71,18 @@ h1, .h1 {
     }
 }
 
-h2, .h2 {
-    font-size: 44px;
+h2,
+.h2 {
+    font-size: 36px;
     letter-spacing: 0.02em;
 
     @media (min-width: $sm) {
-        font-size: 66px;
+        font-size: 44px;
     }
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: 30px;
     letter-spacing: 0.02em;
 
@@ -87,8 +91,11 @@ h3, .h3 {
     }
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.02em;    
 }
 
 .icon {
@@ -102,12 +109,15 @@ input {
     &::-webkit-input-placeholder {
         color: #a0a0a0;
     }
+
     &::-moz-placeholder {
         color: #a0a0a0;
     }
+
     &:-ms-input-placeholder {
         color: #a0a0a0;
     }
+
     &:-moz-placeholder {
         color: #a0a0a0;
     }
@@ -124,6 +134,7 @@ input {
         max-width: 672px;
 
     }
+
     @media (min-width: $md) {
         max-width: 96%;
     }
@@ -135,14 +146,7 @@ input {
     @media (min-width: $xl) {
         max-width: 1400px;
     }
-
-
-    // @media (min-width: $screen-md) and (max-width: $screen-lg) {
-    //     max-width: 98%;
-    // } // Extra large devices (large desktops, 1200px and up)
-    // @media (min-width: $screen-lg) {
-    //     max-width: 1200px;
-    // }
 }
+
 
 @import 'common/*.scss';

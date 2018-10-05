@@ -17,11 +17,11 @@
   <body>
     <section class="hero">
       <header class="header hero__header">
-        <div class="container header__inner"><a class="logo" href=""><img src="assets/img/required/logo.svg" alt=""><span>Scan&nbsp;</span><span class="logo__color">bot</span></a><a class="header__mail" href="tel:"><span class="header__mail-icon">
+        <div class="container header__inner"><a class="logo" href=""><img src="assets/img/required/logo.svg" alt=""><span class="logo__text">Scan&nbsp;<span class="logo__color">bot</span></span></a><a class="btn-circle header__mail btn-circle" href="mailto:"><span class="btn-circle__icon">
               <svg class="icon mail " aria-hidden="true">
                 <use xlink:href="./assets/img/sprite.svg#mail"></use>
-              </svg></span><span class="header__mail-text">Написать письмо</span></a>
-          <ul class="socail">
+              </svg></span><span class="header__mail-text text-small hidden-tab">Написать письмо</span></a>
+          <ul class="social">
             <li class="social__item"><a class="social__link" href="">Facebook
                 <svg class="icon fb " aria-hidden="true">
                   <use xlink:href="./assets/img/sprite.svg#fb"></use>
@@ -38,78 +38,137 @@
                 <svg class="icon youtube " aria-hidden="true">
                   <use xlink:href="./assets/img/sprite.svg#youtube"></use>
                 </svg></a></li>
-          </ul><a class="header__phone" href="tel:+74956005432"><span class="header__phone-icon">
+          </ul><a class="btn-circle header__phone" href="tel:+74956005432"><span class="btn-circle__icon">
               <svg class="icon phone " aria-hidden="true">
                 <use xlink:href="./assets/img/sprite.svg#phone"></use>
-              </svg></span><span class="header__phone-text">+7 495 600-54-32</span></a><a class="header__chat" href=""><span class="header__chat-text">Онлайн-чат</span>
-            <div class="header__icon"><span class="header__icon-tg">
-                <svg class="icon telegram " aria-hidden="true">
-                  <use xlink:href="./assets/img/sprite.svg#telegram"></use>
-                </svg></span><span class="header__icon-lock">
+              </svg></span><span class="header__phone-text hidden-tab">+7 495 600-54-32</span></a><a class="header__chat" href=""><span class="header__chat-text text-small hidden-tab">Онлайн-чат</span>
+            <div class="btn-chat"><span class="btn-chat__lock">
                 <svg class="icon lock " aria-hidden="true">
                   <use xlink:href="./assets/img/sprite.svg#lock"></use>
+                </svg></span><span class="btn-chat__tg">
+                <svg class="icon telegram " aria-hidden="true">
+                  <use xlink:href="./assets/img/sprite.svg#telegram"></use>
                 </svg></span></div></a>
         </div>
       </header>
       <div class="container">
         <div class="hero__promo promo">
           <div class="promo__left">
-            <h1 class="promo__title">Уникальный робот для автоматической торговли</h1>
+            <h1 class="promo__title"> <span class="promo__title-text">Уникальный робот для автоматической торговли</span></h1>
             <div class="h3 promo__subtitle">на брокерском счете нашего партнера</div><a class="promo__link" href="" target="_blank">Открыть счет
               <svg class="icon new_window " aria-hidden="true">
                 <use xlink:href="./assets/img/sprite.svg#new_window"></use>
               </svg></a>
           </div>
           <div class="promo__right">
-            <p class="promo__text elem-border">Хотите зарабатывать на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!</p>
-            <div class="promo__price">
-              <div class="promo__price-old"></div>
-              <div class="promo__price-actual"></div>
+            <div class="promo__right-inner">
+              <p class="promo__text promo__right-item text-base elem-border">Хотите зарабатывать<br> на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!</p>
+              <div class="promo__price promo__right-item">
+                <div class="promo__price-old h3">50 000<span class="promo__price-old-icon">
+                    <svg class="icon rub " aria-hidden="true">
+                      <use xlink:href="./assets/img/sprite.svg#rub"></use>
+                    </svg></span></div>
+                <div class="promo__price-actual h2">25 000<span class="promo__price-actual-icon">
+                    <svg class="icon rub " aria-hidden="true">
+                      <use xlink:href="./assets/img/sprite.svg#rub"></use>
+                    </svg></span></div>
+              </div>
+              <button class="btn btn-main promo__btn js-open-form">Заказать Scanbot</button>
             </div>
-            <button class="btn btn-main promo__btn js-open-form">Заказать Scanbot</button>
           </div>
         </div>
-        <ul class="hero__privilege privilege">
-          <li class="privilege__item">
-            <svg class="icon serv_1 " aria-hidden="true">
-              <use xlink:href="./assets/img/sprite.svg#serv_1"></use>
-            </svg>
-            <p class="text-small">Прибыльность 30—60% в месяц от депозита</p>
-          </li>
-          <li class="privilege__item">
-            <svg class="icon serv_2 " aria-hidden="true">
-              <use xlink:href="./assets/img/sprite.svg#serv_2"></use>
-            </svg>
-            <p class="text-small">Не имеет просадок на длинной дистанции</p>
-          </li>
-          <li class="privilege__item">
-            <svg class="icon serv_3 " aria-hidden="true">
-              <use xlink:href="./assets/img/sprite.svg#serv_3"></use>
-            </svg>
-            <p class="text-small">Эквити равен балансу в течении всей торговли</p>
-          </li>
-          <li class="privilege__item">
-            <svg class="icon serv_4 " aria-hidden="true">
-              <use xlink:href="./assets/img/sprite.svg#serv_4"></use>
-            </svg>
-            <p class="text-small">Прошел испытание на реальном рынке</p>
-          </li>
-          <li class="privilege__item">
-            <svg class="icon serv_5 " aria-hidden="true">
-              <use xlink:href="./assets/img/sprite.svg#serv_5"></use>
-            </svg>
-            <p class="text-small">Аналитика и мониторинг через ClasterDelta</p>
-          </li>
-          <li class="privilege__item">
-            <svg class="icon serv_6 " aria-hidden="true">
-              <use xlink:href="./assets/img/sprite.svg#serv_6"></use>
-            </svg>
-            <p class="text-small">Не использует объемы и математику</p>
-          </li>
-        </ul>
+      </div>
+      <div class="hero__privilege">
+        <div class="container">
+          <ul class="privilege">
+            <li class="privilege__item">
+              <svg class="icon serv_1 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_1"></use>
+              </svg>
+              <p class="text-small">Прибыльность&nbsp;30—60% в месяц от депозита</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_2 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_2"></use>
+              </svg>
+              <p class="text-small">Не имеет просадок на длинной дистанции</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_3 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_3"></use>
+              </svg>
+              <p class="text-small">Эквити равен балансу в течении всей торговли</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_4 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_4"></use>
+              </svg>
+              <p class="text-small">Прошел испытание на реальном рынке</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_5 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_5"></use>
+              </svg>
+              <p class="text-small">Аналитика и мониторинг через ClasterDelta</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_6 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_6"></use>
+              </svg>
+              <p class="text-small">Не использует объемы и математику</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <main class="maincontent"></main>
+    <main class="maincontent">
+      <section class="video">
+        <div class="video__inner container">
+          <div class="video__item-wrap">
+            <div class="video__item">
+              <div class="video__title">
+                <div class="video__title-icon hidden-mob">
+                  <svg class="icon play " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#play"></use>
+                  </svg>
+                </div>
+                <div class="video__title-text"> 
+                  <h2 class="elem-border">Как работает scanbot</h2>
+                  <p class="video__text text-small">Аналитика и обзор реальной денежной массы на рынке ценных бумаг</p><a class="btn-main btn-main--white" href="">Смотреть видео</a>
+                </div>
+              </div>
+            </div>
+            <div class="video__item">
+              <div class="video__title">
+                <div class="video__title-icon hidden-mob">
+                  <svg class="icon play " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#play"></use>
+                  </svg>
+                </div>
+                <div class="video__title-text">
+                  <h2 class="elem-border">Как получается прибыль</h2>
+                  <p class="video__text text-small">Торговля исключительно с ежедневным увеличением депозита</p><a class="btn-main btn-main--white" href="">Смотреть видео</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video__item video__item--full">
+            <div class="video__text">
+              <p class="text-base">Робот прошел многочисленные тесты и испытания на реальном рынке, с реальными деньгами. Уникальный алгоритм работы написан на основе реально опыта и включает в себя всё необходимое для успешной торговли. </p>
+              <p class="text-small">Работает с сигналами и постоянно мониторит движение денежных масс на всём рынке, через биржевой аналитически портал ClusterDelta, что позволяем ему всегда торговать в плюс. </p>
+              <p class="text-small">Scanbot торгует исключительно в плюс, с каждым днем увеличивая ваш депозит. Вы можете в любое время выводить прибыль на доступные платежные системы.</p>
+            </div>
+            <div class="video__cols">
+              <h2 class="elem-border video__cols-item"><span class="video__cols-green">от 30% в месяц </span>от суммы вашего депозита</h2>
+              <div class="video__cols-wrap video__cols-item">
+                <h3 class="video__subtitle h4">Ваш эквити к концу торгового дня будет равен депозиту — робот видит реальный объём денежных масс на рынке</h3>
+                <button class="btn btn-main js-show-form-popup">Заказать Scanbot</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">Я футер</footer>
   </body>
 </html>

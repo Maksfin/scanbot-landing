@@ -10,36 +10,80 @@ block content
     .container
       .hero__promo.promo
         .promo__left
-          h1.promo__title Уникальный робот для автоматической торговли
+          h1.promo__title 
+            span.promo__title-text Уникальный робот для автоматической торговли
           .h3.promo__subtitle на брокерском счете нашего партнера
           a(href="" target="_blank").promo__link Открыть счет
             +icon("new_window")
 
         .promo__right
-          p.promo__text.elem-border Хотите зарабатывать на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!
-          .promo__price
-            .promo__price-old
-            .promo__price-actual
-          button.btn.btn-main.promo__btn.js-open-form Заказать Scanbot
+          .promo__right-inner
+            p.promo__text.promo__right-item.text-base.elem-border Хотите зарабатывать<br> на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!
 
-      ul.hero__privilege.privilege
-        li.privilege__item
-          +icon("serv_1")
-          p.text-small Прибыльность 30—60% в месяц от депозита
-        li.privilege__item
-          +icon("serv_2")
-          p.text-small Не имеет просадок на длинной дистанции
-        li.privilege__item
-          +icon("serv_3")
-          p.text-small Эквити равен балансу в течении всей торговли
-        li.privilege__item
-          +icon("serv_4")
-          p.text-small Прошел испытание на реальном рынке
-        li.privilege__item
-          +icon("serv_5")
-          p.text-small Аналитика и мониторинг через ClasterDelta
-        li.privilege__item
-          +icon("serv_6")
-          p.text-small Не использует объемы и математику
+            .promo__price.promo__right-item
+              .promo__price-old.h3 50 000
+                span.promo__price-old-icon
+                  +icon("rub")
+              .promo__price-actual.h2 25 000
+                span.promo__price-actual-icon
+                  +icon("rub")
+
+            button.btn.btn-main.promo__btn.js-open-form Заказать Scanbot
+
+    .hero__privilege
+      .container
+        ul.privilege
+          li.privilege__item
+            +icon("serv_1")
+            p.text-small Прибыльность&nbsp;30—60% в месяц от депозита
+          li.privilege__item
+            +icon("serv_2")
+            p.text-small Не имеет просадок на длинной дистанции
+          li.privilege__item
+            +icon("serv_3")
+            p.text-small Эквити равен балансу в течении всей торговли
+          li.privilege__item
+            +icon("serv_4")
+            p.text-small Прошел испытание на реальном рынке
+          li.privilege__item
+            +icon("serv_5")
+            p.text-small Аналитика и мониторинг через ClasterDelta
+          li.privilege__item
+            +icon("serv_6")
+            p.text-small Не использует объемы и математику
     
   main.maincontent
+    section.video
+      .video__inner.container
+        .video__item-wrap
+          .video__item
+            .video__title
+              .video__title-icon.hidden-mob
+                +icon("play")
+              .video__title-text 
+                h2.elem-border Как работает scanbot
+                p.video__text.text-small Аналитика и обзор реальной денежной массы на рынке ценных бумаг
+                a(href="").btn-main.btn-main--white Смотреть видео
+
+          .video__item
+            .video__title
+              .video__title-icon.hidden-mob
+                +icon("play")
+              .video__title-text
+                h2.elem-border Как получается прибыль
+                p.video__text.text-small Торговля исключительно с ежедневным увеличением депозита
+                a(href="").btn-main.btn-main--white Смотреть видео
+
+        .video__item.video__item--full
+          .video__text
+            p.text-base Робот прошел многочисленные тесты и испытания на реальном рынке, с реальными деньгами. Уникальный алгоритм работы написан на основе реально опыта и включает в себя всё необходимое для успешной торговли. 
+            p.text-small Работает с сигналами и постоянно мониторит движение денежных масс на всём рынке, через биржевой аналитически портал ClusterDelta, что позволяем ему всегда торговать в плюс. 
+            p.text-small Scanbot торгует исключительно в плюс, с каждым днем увеличивая ваш депозит. Вы можете в любое время выводить прибыль на доступные платежные системы.
+          .video__cols
+            h2.elem-border.video__cols-item
+              span.video__cols-green от 30% в месяц 
+              | от суммы вашего депозита
+            .video__cols-wrap.video__cols-item
+              h3.video__subtitle.h4 Ваш эквити к концу торгового дня будет равен депозиту — робот видит реальный объём денежных масс на рынке
+              button.btn.btn-main.js-show-form-popup Заказать Scanbot
+                    

@@ -1,14 +1,18 @@
 .text-base {
     font-size: 17px;
     line-height: 24px;
+    font-family: $font-roboto;
+    margin-top: 0;
 }
 
 .text-small {
     font-size: 13px;
     line-height: 20px;
+    font-family: $font-roboto;
 }
 
 .text-micro {
     font-size: 11px;
     line-height: 16px;
+    font-family: $font-roboto;
 }

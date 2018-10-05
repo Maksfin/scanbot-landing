@@ -2,24 +2,25 @@ header.header.hero__header
     .container.header__inner
         a(href="").logo
             img(src=pathImage + "logo.svg", alt="")
-            span Scan&nbsp;
-            span.logo__color bot
-        a(href="tel:").header__mail
-            span.header__mail-icon
+            span.logo__text Scan&nbsp;
+                span.logo__color bot
+
+        a(href="mailto:").btn-circle.header__mail.btn-circle
+            span.btn-circle__icon
                 +icon("mail")
-            span.header__mail-text Написать письмо
+            span.header__mail-text.text-small.hidden-tab Написать письмо
 
         include ../common/_social
 
-        a(href="tel:+74956005432").header__phone
-            span.header__phone-icon
+        a(href="tel:+74956005432").btn-circle.header__phone
+            span.btn-circle__icon
                 +icon("phone")
-            span.header__phone-text +7 495 600-54-32
+            span.header__phone-text.hidden-tab +7 495 600-54-32
 
         a(href="").header__chat
-            span.header__chat-text Онлайн-чат
-            .header__icon
-                span.header__icon-tg
-                    +icon("telegram")
-                span.header__icon-lock
+            span.header__chat-text.text-small.hidden-tab Онлайн-чат
+            .btn-chat
+                span.btn-chat__lock
                     +icon("lock")
+                span.btn-chat__tg
+                    +icon("telegram")

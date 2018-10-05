@@ -1,0 +1,150 @@
+.video {
+    background-color: $white;
+
+    @media (min-width: $dsk) {
+        background-color: transparent;
+    }
+
+    &__inner {
+        @media (min-width: $sm) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: $sm) and (max-width: $dsk-max) {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        @media (min-width: $dsk) {
+            background-color: $white;
+        }
+    }
+
+    @media (min-width: $dsk) {
+        flex-wrap: nowrap;
+    }
+
+    &__item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (min-width: $sm) {
+            padding: 48px;
+        }
+
+        @media (min-width: $dsk) {
+            padding: 100px 80px;
+
+            &:first-child {
+                border-bottom: #e5e5e5 1px solid;
+            }
+        }
+
+        &--full {
+            width: 50%;
+
+            @media (max-width: $dsk-max) {
+                width: 100%;
+            }
+        }
+
+        &-wrap {
+            border-bottom: #e5e5e5 1px solid;
+
+            @media (min-width: $dsk) {
+                width: 50%;
+                border-bottom: none;
+                border-right: #e5e5e5 1px solid;
+            }
+
+            @media (min-width: $sm) and (max-width: $dsk) {
+                display: flex;
+
+                >.video__item {
+                    width: 50%;
+
+                    &:nth-child(2) {
+                        border-left: #e5e5e5 1px solid;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &__title {
+        &-icon {
+            width: 96px;
+            height: 96px;
+            flex: 0 0 auto;
+            border-radius: 50%;
+            background-color: $green;
+            display: flex;
+            color: $white;
+            margin-bottom: 30px;
+
+            >.icon {
+                margin: auto;
+            }
+        }
+
+        @media (min-width: $dsk) {
+            display: flex;
+
+            &-icon {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    &__text {
+        margin: 0 0 20px;
+
+        >.text-base {
+            margin-bottom: 30px;
+        }
+
+        >.text-small {
+            margin: 0 0 20px;
+        }
+    }
+
+    &__cols {
+        margin-top: 30px;
+
+        @media (min-width: $sm) {
+            margin-top: 60px;
+        }
+
+        @media (min-width: $dsk) {
+            margin-top: 70px;
+            max-width: 70%;
+        }
+
+        @media (min-width: $sm) and (max-width: $dsk-max) {
+            display: flex;
+            .video__cols-item {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: $dsk-max) {
+            >.elem-border {
+                padding-bottom: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        &-green {
+            color: $green;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 0;
+    }
+}

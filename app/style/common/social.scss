@@ -1,0 +1,43 @@
+.social {
+    @extend .list-reset;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $xs-max) {
+        display: none;
+    }
+
+    &__item:not(:first-child) {
+        @media (min-width: $xs) {
+            margin-left: 5px;
+        }
+        @media (min-width: $sm) {
+            margin-left: 8px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $white;
+        color: $medium;
+        font-size: 0;
+
+        > .icon {
+            margin: auto;
+            font-size: 16px;
+        }
+
+        &:hover, &:focus {
+            background-color: $green;
+            color: $white;
+        }
+        &:active {
+            > .icon {
+                opacity: 0.5;
+            }
+        }
+    }
+}

@@ -1,3 +1,52 @@
 .header {
+    &__inner {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    &__mail {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            margin-left: 8px;
+            color: $green;
+        }
+
+        @media (max-width: $xs-max) {
+            margin-left: auto;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $xs-max) {
+            margin-left: 8px;
+            margin-right: 20px;
+        }
+
+        &-text {
+            font-size: 22px;
+            margin-left: 8px;
+            color: $white;
+        }
+
+        .phone {
+            height: 13px;
+        }
+    }
+
+    &__chat {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            color: $green;
+            margin-right: 12px;
+        }
+    }
 }

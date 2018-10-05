@@ -28,26 +28,14 @@
     clear: both;
 }
 
-@media (max-width: $xs) {
-    .hidden-xs {
+@media (max-width: $sm-max) {
+    .hidden-mob {
         display: none !important;
     }
 }
 
-@media (min-width: $xs) and (max-width: $sm-max) {
-    .hidden-sm {
-        display: none !important;
-    }
-}
-
-@media (min-width: $sm) and (max-width: $dsk) {
-    .hidden-md {
-        display: none !important;
-    }
-}
-
-@media (min-width: $md) {
-    .hidden-lg {
+@media (max-width: $dsk-max) {
+    .hidden-tab {
         display: none !important;
     }
 }

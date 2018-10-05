@@ -1,0 +1,202 @@
+.promo {
+
+    @media (min-width: $md) {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+
+        @media (min-width: $dsk) {
+            padding: 90px 0;
+        }
+    }
+
+    &__left {
+        @media (max-width: $md-max) {
+            padding: 40px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: $sm-max) {
+            padding: 25px 0;
+        }
+
+        @media (min-width: $sm) and (max-width: $md-max) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__right {
+        padding: 30px 0;
+
+        @media (min-width: $md) {
+            width: 34%;
+            padding: 0;
+        }
+
+        &-inner {
+            @media (min-width: $sm) {
+                width: 290px;
+            }
+
+            @media (min-width: $sm) and (max-width: $md-max) {
+                display: flex;
+                justify-content: space-between;
+                min-height: 200px;
+                width: 100%;
+            }
+        }
+
+        &-item {
+            @media (min-width: $sm) and (max-width: $md-max) {
+                width: 33%;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 5px;
+
+        @media (max-width: $sm-max) {
+            width: 100%;
+        }
+
+        @media (min-width: $sm) and (max-width: $md-max) {
+            margin-top: 65px;
+        }
+
+        @media (min-width: $md) {
+            margin-top: 15px;
+        }
+    }
+
+    &__title {
+        color: $green;
+        margin: 0 0 30px;
+
+        &-text {
+            display: inline-block;
+            max-width: 500px;
+        }
+
+        @media (min-width: $sm) and (max-width: $dsk-max) {
+            width: 100%;
+        }
+    }
+
+    &__subtitle {
+        color: $white;
+
+        @media (max-width: $sm-max) {
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: $md) {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__link {
+        font-size: 22px;
+        color: $green;
+        letter-spacing: 0.02em;
+
+        >.icon {
+            font-size: 16px;
+            margin-left: 8px;
+            fill: none;
+            stroke-width: 2px;
+            stroke: currentColor;
+        }
+
+        &:hover,
+        &:focus {
+            color: $green_hover;
+        }
+    }
+
+    &__text {
+        color: $white;
+
+        @media (max-width: $md) {
+            padding-bottom: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &__price {
+        @media (max-width: $sm-max) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-old {
+            position: relative;
+            color: $green;
+            display: inline-flex;
+            line-height: 40px;
+
+            @media (min-width: $sm) and (max-width: $md-max) {
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: $md) {
+                margin-bottom: 5px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                transform: rotate(-29deg);
+                left: 0;
+                top: 15px;
+                width: 70%;
+                height: 2px;
+                background-color: $white;
+            }
+
+            &-icon {
+                display: flex;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: $green;
+                color: $white;
+                margin-left: 5px;
+
+                >.icon {
+                    font-size: 11px;
+                    margin: auto;
+                }
+            }
+        }
+
+        &-actual {
+            color: $white;
+            display: inline-flex;
+            line-height: 66px;
+
+            &-icon {
+                display: flex;
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                background-color: $white;
+                color: $black;
+                margin-left: 5px;
+
+                >.icon {
+                    font-size: 18px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

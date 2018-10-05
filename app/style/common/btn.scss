@@ -6,11 +6,103 @@
     text-align: center;
     user-select: none;
     cursor: pointer;
+    font-family: inherit;
+    transition: .3s;
+}
+
+.btn-circle {
+    color: $green;
+
+    &__icon {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        background-color: currentColor;
+
+        >.icon {
+            font-size: 10px;
+            margin: auto;
+            color: $white;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: $green_hover;
+    }
+
+    &:active {
+        .icon {
+            opacity: 0.5;
+        }
+    }
+}
+
+.btn-chat {
+    display: flex;
+    align-items: center;
+
+    &__tg {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: $green;
+        border-radius: 50%;
+        color: $white;
+
+        >.icon {
+            margin: auto;
+            font-size: 18px;
+        }
+    }
+
+    &__lock {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $white;
+        color: $green;
+        margin-right: -12px;
+        z-index: 1;
+
+        >.icon {
+            margin: auto;
+            font-size: 10px;
+        }
+    }
+}
+
+.btn-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 13px 30px 10px;
+    border-radius: 8px;
+    background-color: $green;
+    color: $white;
+    letter-spacing: 0.02em;
+    outline: none;
+
+    &:hover {
+        background-color: $green_hover;
+    }
+
+    &:active {
+        color: rgba($white, 0.5);
+    }
+
     &:disabled,
     &[disabled="disabled"] {
         cursor: not-allowed;
-        &:hover {
-            background-color: #edeedd;
-        }
+        color: rgba($white, 0.5);
+    }
+
+    @media (max-width: $sm-max) {
+        width: 100%;
     }
 }
