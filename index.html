@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scanbot</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;amp;subset=cyrillic">
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <section class="hero">
+      <header class="header hero__header">
+        <div class="container header__inner"><a class="logo" href=""><img src="assets/img/required/logo.svg" alt=""><span class="logo__text">Scan&nbsp;<span class="logo__color">bot</span></span></a><a class="btn-circle header__mail btn-circle" href="mailto:"><span class="btn-circle__icon">
+              <svg class="icon mail " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#mail"></use>
+              </svg></span><span class="header__mail-text text-small hidden-tab">Написать письмо</span></a>
+          <ul class="social">
+            <li class="social__item"><a class="social__link" href="" target="_blank">Facebook
+                <svg class="icon fb " aria-hidden="true">
+                  <use xlink:href="./assets/img/sprite.svg#fb"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="" target="_blank">Вконтакте
+                <svg class="icon vk " aria-hidden="true">
+                  <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="" target="_blank">Instagram
+                <svg class="icon in " aria-hidden="true">
+                  <use xlink:href="./assets/img/sprite.svg#in"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="" target="_blank">Youtube
+                <svg class="icon youtube " aria-hidden="true">
+                  <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+                </svg></a></li>
+          </ul><a class="btn-circle header__phone" href="tel:+74956005432"><span class="btn-circle__icon">
+              <svg class="icon phone " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#phone"></use>
+              </svg></span><span class="header__phone-text hidden-tab">+7 495 600-54-32</span></a><a class="header__chat" href=""><span class="header__chat-text text-small hidden-tab">Онлайн-чат</span>
+            <div class="btn btn-chat"><span class="btn-chat__lock">
+                <svg class="icon lock " aria-hidden="true">
+                  <use xlink:href="./assets/img/sprite.svg#lock"></use>
+                </svg></span><span class="btn-chat__tg">
+                <svg class="icon telegram " aria-hidden="true">
+                  <use xlink:href="./assets/img/sprite.svg#telegram"></use>
+                </svg></span></div></a>
+        </div>
+      </header>
+      <div class="container">
+        <div class="hero__promo promo">
+          <div class="promo__left">
+            <h1 class="promo__title"><span class="promo__title-text">Уникальный робот для автоматической торговли</span></h1>
+            <div class="h3 promo__subtitle">на брокерском счете нашего партнера</div><a class="promo__link" href="" target="_blank">Открыть счет
+              <svg class="icon new_window " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#new_window"></use>
+              </svg></a>
+          </div>
+          <div class="promo__right">
+            <div class="promo__right-inner">
+              <div class="promo__main">
+                <p class="promo__text promo__main-item text-base elem-border">Хотите зарабатывать<br> на Форексе, но не хватает знаний о финансовых рынках? Теперь это не проблема!</p>
+                <div class="promo__price promo__main-item">
+                  <div class="promo__price-old h3">50 000<span class="promo__price-old-icon">
+                      <svg class="icon rub " aria-hidden="true">
+                        <use xlink:href="./assets/img/sprite.svg#rub"></use>
+                      </svg></span></div>
+                  <div class="promo__price-actual h1">25 000<span class="promo__price-actual-icon">
+                      <svg class="icon rub " aria-hidden="true">
+                        <use xlink:href="./assets/img/sprite.svg#rub"></use>
+                      </svg></span></div>
+                </div>
+                <button class="btn btn-main promo__btn js-open-form">Заказать Scanbot</button>
+              </div>
+              <div class="promo__form">
+                <form class="form promo__form-wrap">
+                  <div class="form__group">
+                    <label class="form__label" for="name">Ваше имя</label>
+                    <input class="form__input" id="name" type="text">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="phone">Телефон для связи</label>
+                    <input class="form__input" id="phone" type="tel" placeholder="+7 (     )">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="email">Адрес эл. почты</label>
+                    <input class="form__input" id="email" type="email">
+                  </div>
+                  <div class="form__text text-micro">Нажимая на кнопку, я принимаю условия 
+                    <button class="btn btn-text" type="button" data-modal="#contract">пользовательского соглашения</button>
+                  </div>
+                  <div class="form__group">
+                    <button class="btn btn-main js-form-submit" type="submit" disabled>Отправить заявку</button>
+                  </div>
+                </form>
+              </div>
+              <div class="promo__succes">
+                <div class="promo__succes-wrap">
+                  <h3 class="promo__succes-title">Заявка на установку принята!</h3>
+                  <p class="text-base">Наш специалист свяжется с вами и настроит робота после оплаты счета</p>
+                  <div class="promo__succes-btn"><a class="btn btn-main" href="">Оплатить</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__privilege">
+        <div class="container">
+          <ul class="privilege">
+            <li class="privilege__item">
+              <svg class="icon serv_1 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_1"></use>
+              </svg>
+              <p class="text-small">Прибыльность&nbsp;30—60% в месяц от депозита</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_2 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_2"></use>
+              </svg>
+              <p class="text-small">Не имеет просадок на длинной дистанции</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_3 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_3"></use>
+              </svg>
+              <p class="text-small">Эквити равен балансу в течении всей торговли</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_4 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_4"></use>
+              </svg>
+              <p class="text-small">Прошел испытание на реальном рынке</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_5 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_5"></use>
+              </svg>
+              <p class="text-small">Аналитика и мониторинг через ClasterDelta</p>
+            </li>
+            <li class="privilege__item">
+              <svg class="icon serv_6 " aria-hidden="true">
+                <use xlink:href="./assets/img/sprite.svg#serv_6"></use>
+              </svg>
+              <p class="text-small">Не использует объемы и математику</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <main class="maincontent">
+      <section class="video">
+        <div class="video__inner container">
+          <div class="video__item-wrap">
+            <div class="video__item">
+              <div class="video__title">
+                <div class="video__title-icon hidden-mob">
+                  <svg class="icon play " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#play"></use>
+                  </svg>
+                </div>
+                <div class="video__title-text"> 
+                  <h2 class="elem-border">Как работает scanbot</h2>
+                  <p class="video__text text-small">Аналитика и обзор реальной денежной массы на рынке ценных бумаг</p><a class="btn-main btn-main--white" href="">Смотреть видео</a>
+                </div>
+              </div>
+            </div>
+            <div class="video__item">
+              <div class="video__title">
+                <div class="video__title-icon hidden-mob">
+                  <svg class="icon play " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#play"></use>
+                  </svg>
+                </div>
+                <div class="video__title-text">
+                  <h2 class="elem-border">Как получается прибыль</h2>
+                  <p class="video__text text-small">Торговля исключительно с ежедневным увеличением депозита</p><a class="btn-main btn-main--white" href="">Смотреть видео</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video__item video__item--full">
+            <div class="video__text">
+              <p class="text-base">Робот прошел многочисленные тесты и испытания на реальном рынке, с реальными деньгами. Уникальный алгоритм работы написан на основе реально опыта и включает в себя всё необходимое для успешной торговли. </p>
+              <p class="text-small">Работает с сигналами и постоянно мониторит движение денежных масс на всём рынке, через биржевой аналитически портал ClusterDelta, что позволяем ему всегда торговать в плюс. </p>
+              <p class="text-small">Scanbot торгует исключительно в плюс, с каждым днем увеличивая ваш депозит. Вы можете в любое время выводить прибыль на доступные платежные системы.</p>
+            </div>
+            <div class="video__cols">
+              <h2 class="elem-border video__cols-item"><span class="video__cols-green">от 30% в месяц </span>от суммы вашего депозита</h2>
+              <div class="video__cols-wrap video__cols-item">
+                <h3 class="video__subtitle h4">Ваш эквити к концу торгового дня будет равен депозиту — робот видит реальный объём денежных масс на рынке</h3>
+                <button class="btn btn-main" data-modal="#form-order">Заказать Scanbot</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info container">
+        <ul class="info__list">
+          <li class="info__item">
+            <div class="info__num elem-border elem-border--center h2">>2 000</div>
+            <div class="info__text text-small">Количество установок</div>
+          </li>
+          <li class="info__item">
+            <div class="info__num elem-border elem-border--center h2">110,4 млн руб.</div>
+            <div class="info__text text-small">Суммарная прибыль в месяц</div>
+          </li>
+          <li class="info__item">
+            <div class="info__num elem-border elem-border--center h2">+30%</div>
+            <div class="info__text text-small">Динамика по новым клиентам</div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container footer__top-inner">
+          <div class="footer__top-col"><span class="text-small footer__top-text">Scanbot.ru +7 495 600-54-32 </span>
+            <ul class="social">
+              <li class="social__item"><a class="social__link" href="" target="_blank">Facebook
+                  <svg class="icon fb " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#fb"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="" target="_blank">Вконтакте
+                  <svg class="icon vk " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="" target="_blank">Instagram
+                  <svg class="icon in " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#in"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="" target="_blank">Youtube
+                  <svg class="icon youtube " aria-hidden="true">
+                    <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item text-small">Общество с ограниченной ответственностью «Автоматические технологии». Москва, Столешников переулок, д. 10</li>
+            <li class="footer__item text-small">Юридический адрес 127247, Москва, Дмитровское шоссе, д. 100, стр.3, пом. I, комн. 24</li>
+            <li class="footer__item text-small">ОГРН 0000000000<br> ИНН 0000000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner"><span class="text-micro footer__bottom-item">&copy; Scanbot 2018</span>
+          <div class="footer__logo footer__bottom-item"><span class="text-micro">В партнерстве с</span><img src="assets/img/required/forex.svg" alt=""></div><span class="text-micro footer__bottom-item">Не является брокером</span>
+          <div class="footer__bottom-item">
+            <button class="btn footer__link text-micro" data-modal="#offer">Оферта</button>
+            <button class="btn footer__link text-micro" data-modal="#contract">Пользовательское соглашение</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="form-order">
+      <form class="form form--modal">
+        <div class="form__group">
+          <label class="form__label" for="name">Ваше имя</label>
+          <input class="form__input" id="name" type="text">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="phone">Телефон для связи</label>
+          <input class="form__input" id="phone" type="tel" placeholder="+7 (     )">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="email">Адрес эл. почты</label>
+          <input class="form__input" id="email" type="email">
+        </div>
+        <div class="form__text text-micro">Нажимая на кнопку, я принимаю условия 
+          <button class="btn btn-text" type="button" data-modal="#contract">пользовательского соглашения</button>
+        </div>
+        <div class="form__group">
+          <button class="btn btn-main js-form-submit" type="submit" disabled>Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal" id="form-order-succes">
+      <h3>Заявка на установку принята!</h3>
+      <p class="text-base">Наш специалист свяжется с вами и настроит робота после оплаты счета</p><a class="btn btn-main" href="">Оплатить</a>
+    </div>
+    <div class="modal modal--text" id="offer">
+      <h2>Публичная оферта</h2>
+      <p class="text-base">ScanBot, расположенный на доменном имени www.scanbot.ru, принадлежащий ООО Автоматические технологии, ОГРН 000000000, именуемый в дальнейшем  «Компания», публикует настоящий договор об оказании интеллектуальных услуг на подключение программного кода дистанционным способом на счета Клиентов.</p>
+      <h3 class="h4">Оглавление</h3>
+      <ol>
+        <li>Уведомление о рисках</li>
+        <li>Основные понятия</li>
+        <li>Предмет договора</li>
+        <li>Права и обязанности клиента</li>
+        <li>Права и обязанности компании</li>
+        <li>Вознаграждение компании</li>
+        <li>Ответственность сторон</li>
+        <li>Расходы сторон</li>
+        <li>Конфиденциальность договора</li>
+        <li>Заключительные положения</li>
+      </ol>
+      <ol>
+        <li>Уведомление о рисках
+          <ol>
+            <li>Торговые операции на финансовых рынках связанных с высокой степенью риска.  Клиент признает, что его решения и/или действия/бездействия могут привести к его личным финансовым потерям, связанными с этими рисками.</li>
+            <li>Настоящее уведомление описывает наиболее распространенные виды рисков, но в нём не может быть раскрыта вся информация обо всех потенциальных рисках вследствие их разнообразия.</li>
+            <li>Риск использования кредитного плеча.</li>
+            <li>При совершении торговых операций на условиях маржинальной торговли сравнительное небольшое изменение курса может принести как значительную прибыль, так и убытки.</li>
+            <li>При движении рынка против позиции Клиента, существует риск потери всех депонированных на счёт средств.</li>
+          </ol>
+        </li>
+        <li>Основные понятия</li>
+        <li>Предмет договора</li>
+        <li>Права и обязанности клиента</li>
+        <li>Права и обязанности компании</li>
+        <li>Вознаграждение компании</li>
+        <li>Ответственность сторон</li>
+        <li>Расходы сторон</li>
+        <li>Конфиденциальность договора</li>
+        <li>Заключительные положения</li>
+      </ol>
+    </div>
+    <div class="modal modal--text" id="contract">
+      <h2>Политика обработки персональных данных</h2>
+      <p class="text-base">Настоящая Политика обработки персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт «scanbot.ru» и их поддомены (далее — Сайт), расположенный на доменном имени «scanbot.ru» и их поддоменах, может получить о Клиенте во время использования Сайтов.</p>
+      <ol>
+        <li>Предоставление информации Клиентом.
+          <ol>
+            <li>Отправляя сообщения при помощи формы обратной связи, Клиент предоставляет следующую информацию:
+              <ul>
+                <li>Имя, номер контактного телефона.</li>
+              </ul>
+            </li>
+            <li>Предоставляя свои персональные данные Клиент соглашается на их обработку в целях исполнения предоставления услуг, а также соглашается на получение сообщений рекламно-информационного характера.</li>
+            <li>Мы используем предоставленные Клиентом данные в целях:
+              <ul>
+                <li>предоставления консультаций по товарам и услугам;</li>
+                <li>обработки Заказов Клиента и для выполнения своих обязательств перед Клиентом;</li>
+                <li>для осуществления деятельности по продвижению товаров и услуг;</li>
+                <li>оценки и анализа работы Сайтов.</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>Предоставление и передача информации, полученной нами от Клиента:
+          <ol>
+            <li>Мы обязуемся, что передача полученной от Клиента информации третьим лицам будет осуществлена только в рамках выполнения заказа Клиента на нашем сайте.</li>
+            <li>Не считается нарушением обязательств передача информации в соответствии с обоснованными и применимыми требованиями законодательства Российской Федерации.</li>
+            <li>Мы не несем ответственности за сведения, предоставленные Клиентом на Сайтах в общедоступной форме.</li>
+          </ol>
+        </li>
+        <li>Дополнительные условия.
+          <ol>
+            <li>Администрация Сайтов вправе вносить изменения в настоящую Политику конфиденциальности без согласия Клиента.</li>
+            <li>Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайтах, если иное не предусмотрено новой редакцией Политики конфиденциальности.</li>
+            <li>Действующая Политика конфиденциальности размещена на странице по адресу «scanbot.ru/politika-obrabotki-personalnyh-dannyh» и подобных страницах поддоменов Сайтов.</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
