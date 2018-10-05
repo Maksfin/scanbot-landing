@@ -119,15 +119,20 @@
         }
 
         @media (min-width: $dsk) {
-            margin-top: 70px;
-            max-width: 70%;
+            margin-top: 140px;
         }
 
         @media (min-width: $sm) and (max-width: $dsk-max) {
             display: flex;
             .video__cols-item {
                 width: 50%;
-                padding-right: 50px;
+                padding-right: 55px;
+            }
+        }
+
+        .video__cols-item:first-child {
+            @media (max-width: $sm-max) {
+                padding-right: 62px;
             }
         }
 
