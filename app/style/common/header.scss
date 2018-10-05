@@ -1,12 +1,13 @@
 .header {
-    transition: .2s;
+    transition: background-color .2s;
 
     &.js-fixed {
         position: fixed;
+        top: 0;
         background-color: $white;
         box-shadow: 0px 4px 8px rgba(6, 25, 40, 0.05);
         z-index: 1;
-
+        
         .header__phone-text,
         .logo__color {
             color: $black;

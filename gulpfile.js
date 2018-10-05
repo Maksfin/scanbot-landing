@@ -37,3 +37,9 @@ $.gulp.task('default', $.gulp.series(
     'serve'
   )
 ));
+
+// Deploy
+$.gulp.task('deploy', function () {
+  return $.gulp.src("./build/**/*")
+    .pipe($.gp.ghPages());
+});

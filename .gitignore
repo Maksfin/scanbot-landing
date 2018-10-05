@@ -21,6 +21,7 @@
 .project
 .settings
 .tmproj
+.publish
 Thumbs.db
 
 # Folders to ignore

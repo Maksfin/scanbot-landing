@@ -14,12 +14,12 @@
     }
     @media (min-width: $md) {
         height: 100vh;
-        min-height: 800px;
+        min-height: 820px;
     }
 
     &__header {
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 0;
         width: 100%;
     }
