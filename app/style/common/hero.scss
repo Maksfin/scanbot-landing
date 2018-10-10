@@ -13,8 +13,7 @@
         background-image: url(../img/required/bg-hero.jpg);
     }
     @media (min-width: $md) {
-        height: 100vh;
-        min-height: 820px;
+        min-height: 100vh;
     }
 
     &__header {
